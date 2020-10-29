@@ -99,3 +99,5 @@ function starFunc(len) {
 starFunc(5);
 
 // 별 찍기 - 2
+
+// X 보다 작은 수
