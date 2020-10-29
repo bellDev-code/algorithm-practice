@@ -57,6 +57,45 @@ function solution(x, y) {
 // solution(12, 5);
 // solution(9, -13);
 
-// 4. 알람 시계
+// 4. 알람 시계 => 모르겠다 씨이발
 
 function time(H, M) {}
+
+// for문 활용
+
+// 1. 구구단
+function nineninedan(N) {
+  for (let i = 1; i <= 9; i++) {
+    const result = N * i;
+    // console.log(result);
+  }
+}
+
+nineninedan(2);
+
+// 2. 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오. => 문제 이해 실패
+// 첫째 줄에 테스트 케이스의 개수 T가 주어진다.
+// 각 테스트 케이스는 한 줄로 이루어져 있으며, 각 줄에 A와 B가 주어진다. (0 < A, B < 10)
+
+// 3. n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성하시오.
+function solution(n) {
+  let sum = 1;
+  for (let i = 1; i <= n; i++) {
+    sum += i;
+    console.log(i);
+  }
+}
+solution(3);
+
+// 별 찍기 - 1
+
+function starFunc(len) {
+  const star = "*";
+  for (let i = 0; i <= len; i++) {
+    // console.log(star.repeat(i));
+  }
+}
+
+starFunc(5);
+
+// 별 찍기 - 2
