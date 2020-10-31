@@ -57,7 +57,7 @@ function solution(x, y) {
 // solution(12, 5);
 // solution(9, -13);
 
-// 4. 알람 시계 => 모르겠다 씨이발
+// 4. 알람 시계 => 모르겠다
 
 function time(H, M) {}
 
