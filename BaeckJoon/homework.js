@@ -82,7 +82,7 @@ function solution(n) {
   let sum = 1;
   for (let i = 1; i <= n; i++) {
     sum += i;
-    console.log(i);
+    // console.log(i);
   }
 }
 solution(3);
