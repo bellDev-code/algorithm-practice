@@ -20,4 +20,9 @@ function solution() {
 function solution() {
   let max = 0;
   const array = [3, 29, 38, 12, 57, 74, 40, 85, 61];
+  for (let i = 0; i < array.length; i++) {
+    console.log(array.length);
+  }
 }
+
+solution();
