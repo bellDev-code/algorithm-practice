@@ -6,10 +6,9 @@
 
 // 모든 정수는 -1,000,000보다 크거나 같고, 1,000,000보다 작거나 같은 정수이다.
 
-function solution() {
-  let max = 0;
-  let min = 0;
-}
+// function solution() {
+
+// }
 
 // 2. 9개의 서로 다른 자연수가 주어질 때, 이들 중 최댓값을 찾고 그 최댓값이 몇 번째 수인지를 구하는 프로그램을 작성하시오.
 
@@ -19,16 +18,9 @@ function solution() {
 
 // 이 주어지면, 이들 중 최댓값은 85이고, 이 값은 8번째 수이다.
 
-// function solution() {
-//   let max = 0;
-//   const array = [3, 29, 38, 12, 57, 74, 40, 85, 61];
-//   for (let i = 0; i < array.length; i++) {
-//     console.log(array.length);
-//     break;
-//   }
-// }
+function solution() {}
 
-// solution();
+solution();
 
 // 알람시계 문제
 
