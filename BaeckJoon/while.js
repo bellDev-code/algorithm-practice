@@ -1,11 +1,11 @@
 // 1. 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
-function solution(A, B) {
-  while (A > 0 && B < 10) {
-    const result = A + B;
-    // console.log(result);
-    break;
-  }
-}
+// function solution(A, B) {
+//   while (A > 0 && B < 10) {
+//     const result = A + B;
+//     // console.log(result);
+//     break;
+//   }
+// }
 
 // solution(1, 1);
 // solution(2, 3);
@@ -16,13 +16,13 @@ function solution(A, B) {
 
 // 2. 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
 
-function solution(A, B) {
-  while (A > 0 && B < 10) {
-    const plus = A + B;
-    // console.log(plus);
-    break;
-  }
-}
+// function solution(A, B) {
+//   while (A > 0 && B < 10) {
+//     const plus = A + B;
+//     // console.log(plus);
+//     break;
+//   }
+// }
 
 // solution(1, 1);
 // solution(2, 3);
@@ -46,8 +46,4 @@ function solution(A, B) {
 
 // 입력 : N이 주어졌을 때, N의 사이클의 길이를 구하는 프로그램을 작성하시오.
 
-// => 모르겠음
-
-// const algorithm = () => {
-
-// };
+// 못풀겠음
