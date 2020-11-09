@@ -47,3 +47,31 @@
 // 입력 : N이 주어졌을 때, N의 사이클의 길이를 구하는 프로그램을 작성하시오.
 
 // 못풀겠음
+
+// function solution(A, B) {
+//   let count = 0;
+//   while (count < 10) {
+//     // 입력 함수 호출
+//     // 더해서 출력
+//     if (A > 0 && B < 10) {
+//       const result = A + B;
+//       console.log(result);
+//     } else {
+//       break;
+//     }
+//     count += 1;
+//   }
+// }
+
+// //문자열
+// const x2 = "26";
+// console.log(x2[0]);
+
+// const x = 26;
+// // 앞자리수
+// console.log(Math.floor(x / 10));
+// // 뒷자리수
+// console.log(x % 10);
+
+// const test = "150";
+// console.log(test[0]);

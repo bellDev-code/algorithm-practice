@@ -11,7 +11,7 @@
 // function solution() {
 //   let temp = array[0];
 //   for (let i = 1; i < array.length; i++) {
-//     // console.log(array[i], temp);
+//     console.log(array[i], temp);
 //     if (temp < array[i]) {
 //       temp = array[i];
 //     }
@@ -31,9 +31,9 @@
 //   console.log(temp);
 // }
 // test();
-const array = [20, 10, 35, 30, 7];
-const min = Math.min.apply(null, array);
-console.log(min);
+// const array = [20, 10, 35, 30, 7];
+// const min = Math.min.apply(null, array);
+// console.log(min);
 // min(a, b, c)
 // [a, b, c]
 
@@ -45,10 +45,48 @@ console.log(min);
 
 // 이 주어지면, 이들 중 최댓값은 85이고, 이 값은 8번째 수이다.
 
-// function solution() {}
+// const array = [3, 29, 38, 12, 57, 74, 40, 85, 61];
+
+// function solution() {
+//   let temp = array[0];
+//   let length = 0;
+//   //   console.log(temp);
+//   for (let i = 1; i < 9; i++) {
+//     if (temp < array[i]) {
+//       temp = array[i];
+//       length = i + 1;
+//     }
+//   }
+//   console.log(temp, length);
+// }
 
 // solution();
 
+// 3. 세 개의 자연수 A, B, C가 주어질 때 A×B×C를 계산한 결과에 0부터 9까지 각각의 숫자가 몇 번씩 쓰였는지를 구하는 프로그램을 작성하시오.
+
+// 예를 들어 A = 150, B = 266, C = 427 이라면
+
+// A × B × C = 150 × 266 × 427 = 17037300 이 되고,
+
+// 계산한 결과 17037300 에는 0이 3번, 1이 1번, 3이 2번, 7이 2번 쓰였다.
+
+const input = [150, 266, 427];
+
+function solution() {
+  let num = String(input[0] * input[1] * input[2]);
+  console.log(num);
+  for (let i = 0; i <= 9; i++) {
+    let count = 0;
+    for (let j = 0; j < num.length; j++) {
+      if (Number(num[j]) === i) {
+        count++;
+      }
+    }
+    console.log(count);
+  }
+}
+
+solution();
 // 알람시계 문제
 
 // function solution(H, M) {
