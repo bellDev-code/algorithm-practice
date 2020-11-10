@@ -70,23 +70,38 @@
 
 // 계산한 결과 17037300 에는 0이 3번, 1이 1번, 3이 2번, 7이 2번 쓰였다.
 
-const input = [150, 266, 427];
+// const array = [150, 266, 427];
 
-function solution() {
-  let num = String(input[0] * input[1] * input[2]);
-  console.log(num);
-  for (let i = 0; i <= 9; i++) {
-    let count = 0;
-    for (let j = 0; j < num.length; j++) {
-      if (Number(num[j]) === i) {
-        count++;
-      }
-    }
-    console.log(count);
-  }
-}
+// function solution() {
+//   let num = String(array[0] * array[1] * array[2]);
+//   console.log(num);
+//   for (let i = 0; i <= 9; i++) {
+//     let count = 0;
+//     for (let j = 0; j < num.length; j++) {
+//       if (Number(num[j]) === i) {
+//         count++;
+//       }
+//     }
+//     console.log(count);
+//   }
+// }
 
-solution();
+// 4. 두 자연수 A와 B가 있을 때, A%B는 A를 B로 나눈 나머지 이다. 예를 들어, 7, 14, 27, 38을 3으로 나눈 나머지는 1, 2, 0, 2이다.
+
+// 수 10개를 입력받은 뒤, 이를 42로 나눈 나머지를 구한다. 그 다음 서로 다른 값이 몇 개 있는지 출력하는 프로그램을 작성하시오.
+
+// const array = [39, 40, 41, 42, 43, 44, 82, 83, 84, 85];
+
+// function solution() {
+//   for (let i = 0; i < array.length; i++) {
+//     let num = array[i] % 42;
+//     console.log(num);
+//   }
+// }
+
+// solution();
+
+// solution();
 // 알람시계 문제
 
 // function solution(H, M) {
