@@ -117,3 +117,23 @@
 // star(6);
 
 // X 보다 작은 수
+
+// 알람시계 문제
+
+// function solution(H, M) {
+//   if (M - 45 < 0) {
+//     M = 60 + (M - 45);
+//     H -= 1;
+//     if (H === -1) {
+//       H = 23;
+//     }
+//   } else {
+//     M -= 45;
+//   }
+//   console.log(H + " " + M);
+// }
+
+// solution(10, 10);
+// solution(9, 25);
+// solution(0, 30);
+// solution(23, 40);
