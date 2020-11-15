@@ -45,13 +45,13 @@
 
 // 이 주어지면, 이들 중 최댓값은 85이고, 이 값은 8번째 수이다.
 
-// const array = [3, 29, 38, 12, 57, 74, 40, 85, 61];
+// const array = [4, 29, 99, 12, 57, 74, 40, 85, 61, 100];
 
 // function solution() {
 //   let temp = array[0];
 //   let length = 0;
 //   //   console.log(temp);
-//   for (let i = 1; i < 9; i++) {
+//   for (let i = 1; i < array.length; i++) {
 //     if (temp < array[i]) {
 //       temp = array[i];
 //       length = i + 1;
@@ -73,19 +73,21 @@
 // const array = [150, 266, 427];
 
 // function solution() {
-//   let num = String(array[0] * array[1] * array[2]);
-//   console.log(num);
-//   for (let i = 0; i <= 9; i++) {
-//     let count = 0;
-//     for (let j = 0; j < num.length; j++) {
-//       if (Number(num[j]) === i) {
-//         count++;
-//       }
-//     }
-//     console.log(count);
+//   let num = array[0] * array[1] * array[2];
+//   const numStr = num.toString();
+
+//   const numArray = new Array(9).fill(0);
+
+//   for (let i = 0; i < numStr.length; i++) {
+//     const temp = +numStr[i];
+//     numArray[temp] += 1;
+//   }
+
+//   for (const num of numArray) {
+//     console.log(num);
 //   }
 // }
-
+// solution();
 // 4. 두 자연수 A와 B가 있을 때, A%B는 A를 B로 나눈 나머지 이다. 예를 들어, 7, 14, 27, 38을 3으로 나눈 나머지는 1, 2, 0, 2이다.
 
 // 수 10개를 입력받은 뒤, 이를 42로 나눈 나머지를 구한다. 그 다음 서로 다른 값이 몇 개 있는지 출력하는 프로그램을 작성하시오.
@@ -93,10 +95,13 @@
 // const array = [39, 40, 41, 42, 43, 44, 82, 83, 84, 85];
 
 // function solution() {
+//   const newSet = new Set();
+
 //   for (let i = 0; i < array.length; i++) {
 //     let num = array[i] % 42;
-//     console.log(num);
+//     newSet.add(num);
 //   }
+//   console.log(Array.from(newSet).length);
 // }
 
 // solution();
@@ -158,3 +163,49 @@
 // 점수는 0보다 크거나 같고, 100보다 작거나 같은 정수이다.
 
 // function solution() {}
+
+// function solution(array) {
+//   let avg = 0;
+
+//   for (const num of array) {
+//     avg += num;
+//   }
+
+//   avg /= array.length;
+
+//   let count = 0;
+//   for (const num of array) {
+//     if (avg < num) {
+//       count++;
+//     }
+//   }
+
+//   return (count / array.length) * 100;
+// }
+
+// const array = [100, 95, 90, 80, 70, 60, 50];
+// console.log(solution(array));
+
+// const num = 55;
+
+// function solution(num) {
+//   let count = 0;
+//   let compareNum = num;
+
+//   while (true) {
+//     count += 1;
+//     const a = Math.floor(compareNum / 10);
+//     const b = compareNum % 10;
+
+//     const sum = a + b;
+//     const strSum = `${b}${sum % 10}`;
+//     if (+strSum === num) {
+//       break;
+//     }
+//     compareNum = +strSum;
+//   }
+//   return count;
+// }
+
+// const count = solution(num);
+// console.log(count);
