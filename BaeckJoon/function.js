@@ -23,19 +23,3 @@
 // 100보다 작은 셀프 넘버는 총 13개가 있다. 1, 3, 5, 7, 9, 20, 31, 42, 53, 64, 75, 86, 97
 
 // 10000보다 작거나 같은 셀프 넘버를 한 줄에 하나씩 출력하는 프로그램을 작성하시오.
-
-let array = [];
-for (let i = 0; i <= 10000; i++) {
-  array.push(i);
-}
-
-let num = 1;
-for (let i = 0; i <= 10000; i++) {
-  let result = 0;
-  let numIndex = 0;
-
-  for (let j = 0; j < i.toString().length; j++) {
-    numIndex += Number(i.toString()[j]);
-  }
-  console.log(result, numIndex);
-}
