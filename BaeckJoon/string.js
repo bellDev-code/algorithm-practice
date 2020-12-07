@@ -20,3 +20,48 @@
 // 3. 알파벳 소문자로만 이루어진 단어 S가 주어진다. 각각의 알파벳에 대해서, 단어에 포함되어 있는 경우에는 처음 등장하는 위치를,
 
 // 포함되어 있지 않은 경우에는 -1을 출력하는 프로그램을 작성하시오.
+
+// const chars = [];
+
+// for (let i = 97; i < 123; i++) {
+//   chars.push(i);
+// }
+// const compare = "baekjoon";
+
+// const result = new Array(chars.length).fill(-1);
+
+// for (let i = 0; i < compare.length; i++) {
+//   const ascii = compare[i].charCodeAt(0);
+//   const foundIndex = chars.findIndex((char) => char === ascii);
+//   result[foundIndex] = i;
+// }
+
+// 4. 문자열 S를 입력받은 후에, 각 문자를 R번 반복해 새 문자열 P를 만든 후 출력하는 프로그램을 작성하시오.
+
+// 즉, 첫 번째 문자를 R번 반복하고,
+
+// 두 번째 문자를 R번 반복하는 식으로 P를 만들면 된다. S에는 QR Code "alphanumeric" 문자만 들어있다.
+
+// const num = 5;
+// const str = "/HTP";
+
+// let result = "";
+
+// for (const char of str) {
+//   for (let i = 0; i < num; i++) {
+//     result += char;
+//   }
+// }
+
+// console.log(result);
+
+// 5. 알파벳 대소문자로 된 단어가 주어지면, 이 단어에서 가장 많이 사용된 알파벳이 무엇인지 알아내는 프로그램을 작성하시오.
+
+// 단, 대문자와 소문자를 구분하지 않는다.
+
+// 6. 영어 대소문자와 띄어쓰기만으로 이루어진 문자열이 주어진다. 이 문자열에는 몇 개의 단어가 있을까? 이를 구하는 프로그램을 작성하시오.
+
+// 단, 한 단어가 여러 번 등장하면 등장한 횟수만큼 모두 세어야 한다.
+
+const word = "The Curious Case of Benjamin Button";
+const space = " ";
