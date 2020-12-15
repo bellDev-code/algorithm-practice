@@ -64,7 +64,7 @@
 // 단, 한 단어가 여러 번 등장하면 등장한 횟수만큼 모두 세어야 한다.
 
 const word = "The Curious Case of Benjamin Button";
-const space = " ";
+const compare = "";
 
 // 7. 상근이의 동생 상수는 수학을 정말 못한다. 상수는 숫자를 읽는데 문제가 있다.
 
@@ -77,3 +77,22 @@ const space = " ";
 // 상수는 이 수를 437과 398로 읽는다. 따라서, 상수는 두 수중 큰 수인 437을 큰 수라고 말할 것이다.
 
 // 두 수가 주어졌을 때, 상수의 대답을 출력하는 프로그램을 작성하시오.
+
+// const score = "734 897";
+// const newScore = score.split("").reduce((item, index) => index + item);
+// console.log(newScore);
+// const data = newScore.split(" ");
+// const newData = Math.max.apply(null, data);
+// console.log(newData);
+
+// split 함수 예제
+// 문자열을 분할하는 메서드
+
+// reduce 함수 예제
+// const array = [1, 2, 3, 4];
+// const reducer = (acc, current) => acc + current;
+
+// console.log(array.reduce(reducer));
+// 10이 출력된다.
+
+// 8. 다이얼 문제
