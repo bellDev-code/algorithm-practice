@@ -92,7 +92,7 @@
 // function starFunc(len) {
 //   const star = "*";
 //   for (let i = 0; i <= len; i++) {
-//     // console.log(star.repeat(i));
+//     console.log(star.repeat(i));
 //   }
 // }
 
@@ -100,21 +100,21 @@
 
 // 별 찍기 - 2
 
-// const star = (n) => {
-//   let str = "";
-//   for (let i = 0; i < n; i++) {
-//     for (let j = 0; j < n - i; j++) {
-//       str += " ";
-//     }
-//     for (let z = 0; z < i; z++) {
-//       str += "*";
-//     }
-//     console.log(str);
-//     str = "";
-//   }
-// };
+const star = (n) => {
+  let str = "";
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n - i; j++) {
+      str += " ";
+    }
+    for (let z = 0; z < i; z++) {
+      str += "*";
+    }
+    console.log(str);
+    str = "";
+  }
+};
 
-// star(6);
+star(6);
 
 // X 보다 작은 수
 
@@ -138,7 +138,7 @@
 // solution(0, 30);
 // solution(23, 40);
 
-"use-strict";
+("use-strict");
 
 // const array = ["a", "b", "c", "d"];
 
