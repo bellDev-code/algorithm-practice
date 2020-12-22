@@ -16,3 +16,9 @@
 // console.log(Array.from("foo"));
 
 // console.log(Array.from([1, 2, 3], (x) => x + x));
+
+// const word = ["git", "push"];
+// const word2 = ["origin", "master"];
+// const word3 = word.concat(word2);
+
+// console.log(word3);
