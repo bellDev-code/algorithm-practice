@@ -1,3 +1,5 @@
+"use-strict";
+
 // split 함수
 
 // const str = "The quick brown fox jumps over the lazy dog.";
@@ -23,3 +25,24 @@
 // const word3 = word.concat(word2);
 
 // console.log(word3);
+
+// let 과 const의 차이점
+// let은 변수에 재할당이 가능하다.
+
+// let name = "leejongho";
+// console.log(name);
+
+// let name = "youngdo";
+// console.log(name);
+
+// name = "react";
+// console.log(name);
+
+// const name2 = "lee";
+// console.log(name2);
+
+// const name2 = "jong";
+// console.log(name2);
+
+// name2 = "ho";
+// console.log(name2);
