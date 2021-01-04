@@ -45,10 +45,8 @@ const numArr = [150, 266, 427];
 function seconSolution() {
   let num = numArr[0] * numArr[1] * numArr[2];
   // console.log(num);
-
   const numStr = num.toString();
   //   console.log(numStr);
-
   const newNumArr = new Array(9).fill(0);
   //   console.log(newNumArr);
   for (let i = 0; i < numStr.length; i++) {
@@ -56,8 +54,25 @@ function seconSolution() {
     newNumArr[temp] += 1;
   }
   for (const num of newNumArr) {
-    console.log(num);
+    // console.log(num);
   }
 }
 
 seconSolution();
+
+const division = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function threeSolution() {
+  const newSet = new Set();
+  for (let i = 0; i < division.length; i++) {
+    const temp = division[i] % 42;
+    newSet.add(temp);
+  }
+  console.log(Array.from(newSet).length);
+}
+
+threeSolution();
+
+const avgArray = [40, 80, 60];
+
+function average() {}
