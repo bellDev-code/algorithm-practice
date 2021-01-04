@@ -47,20 +47,20 @@
 
 // const array = [4, 29, 99, 12, 57, 74, 40, 85, 61, 100];
 
-// function solution() {
-//   let temp = array[0];
-//   let length = 0;
-//   //   console.log(temp);
-//   for (let i = 1; i < array.length; i++) {
-//     if (temp < array[i]) {
-//       temp = array[i];
-//       length = i + 1;
-//     }
-//   }
-//   console.log(temp, length);
-// }
+function solution() {
+  let temp = array[0];
+  let length = 0;
+  //   console.log(temp);
+  for (let i = 1; i < array.length; i++) {
+    if (temp < array[i]) {
+      temp = array[i];
+      length = i + 1;
+    }
+  }
+  console.log(temp, length);
+}
 
-// solution();
+solution();
 
 // 3. 세 개의 자연수 A, B, C가 주어질 때 A×B×C를 계산한 결과에 0부터 9까지 각각의 숫자가 몇 번씩 쓰였는지를 구하는 프로그램을 작성하시오.
 

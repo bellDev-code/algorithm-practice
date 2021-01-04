@@ -1,48 +1,63 @@
 "use-strict";
 
-// split 함수
+const array = [20, 10, 35, 30, 7];
 
-// const str = "The quick brown fox jumps over the lazy dog.";
-// const oneWord = str.split("");
-// const word = str.split(" ");
+// 최대값을 구하는 js 함수
+const maxArr = Math.max.apply(null, array);
 
-// console.log(oneWord);
-// console.log(word);
-// console.log(word[0]);
+// 최소값을 구하는 js 함수
+const minArr = Math.min.apply(null, array);
 
-// sort 함수
-// const array = ["banana", "watermelon", "cherry", "melon"];
-// array.sort().join();
-// console.log(array);
+console.log(minArr, maxArr);
 
-// from 함수
-// console.log(Array.from("foo"));
+function solution() {
+  let temp = array[0];
+  for (let i = 1; i < array.length; i++) {
+    // console.log(array[i], temp);
+    if (temp < array[i]) {
+      temp = array[i];
+    }
+  }
+  console.log(temp);
+}
 
-// console.log(Array.from([1, 2, 3], (x) => x + x));
+solution();
 
-// const word = ["git", "push"];
-// const word2 = ["origin", "master"];
-// const word3 = word.concat(word2);
+const newArr = [3, 29, 38, 12, 57, 74, 40, 85, 61];
 
-// console.log(word3);
+function newSolution() {
+  let temp = newArr[0];
+  let length = 0;
+  for (let i = 1; i < newArr.length; i++) {
+    // console.log(newArr[i], temp);
+    if (temp < newArr[i]) {
+      temp = newArr[i];
+      length = i + 1;
+    }
+  }
+  console.log(temp, length);
+}
 
-// let 과 const의 차이점
-// let은 변수에 재할당이 가능하다.
+newSolution();
 
-// let name = "leejongho";
-// console.log(name);
+const numArr = [150, 266, 427];
 
-// let name = "youngdo";
-// console.log(name);
+function seconSolution() {
+  let num = numArr[0] * numArr[1] * numArr[2];
+  // console.log(num);
 
-// name = "react";
-// console.log(name);
+  const numStr = num.toString();
+  //   console.log(numStr);
 
-// const name2 = "lee";
-// console.log(name2);
+  const newNumArr = new Array(9).fill(0);
+  //   console.log(newNumArr);
+  for (let i = 0; i < numStr.length; i++) {
+    const temp = +numStr[i];
+    newNumArr[temp] += 1;
+  }
+  for (const num of newNumArr) {
+    console.log(num);
+  }
+}
 
-// const name2 = "jong";
-// console.log(name2);
-
-// name2 = "ho";
-// console.log(name2);
+seconSolution();
