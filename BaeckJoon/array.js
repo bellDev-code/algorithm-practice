@@ -124,33 +124,33 @@ solution();
 
 // OX퀴즈의 결과가 주어졌을 때, 점수를 구하는 프로그램을 작성하시오.
 
-// const test = [
-//   "5",
-//   "OOXXOXXOOO",
-//   "OOXXOOXXOO",
-//   "OXOXOXOXOXOXOX",
-//   "OOOOOOOOOO",
-//   "OOOOXOOOOXOOOOX",
-// ];
+const test = [
+  "5",
+  "OOXXOXXOOO",
+  "OOXXOOXXOO",
+  "OXOXOXOXOXOXOX",
+  "OOOOOOOOOO",
+  "OOOOXOOOOXOOOOX",
+];
 
-// function oxquize() {
-//   const N = parseInt(test[0]);
-//   for (let i = 0; i <= N; i++) {
-//     let count = 1;
-//     let eachSum = 0;
-//     for (let j = 0; j < test[i].length; j++) {
-//       if (test[i][j] === "O") {
-//         eachSum += count;
-//         count++;
-//       } else {
-//         count = 1;
-//       }
-//     }
-//     console.log(eachSum);
-//   }
-// }
+function oxquize() {
+  const N = parseInt(test[0]);
+  for (let i = 0; i <= N; i++) {
+    let count = 1;
+    let eachSum = 0;
+    for (let j = 0; j < test[i].length; j++) {
+      if (test[i][j] === "O") {
+        eachSum += count;
+        count++;
+      } else {
+        count = 1;
+      }
+    }
+    console.log(eachSum);
+  }
+}
 
-// oxquize();
+oxquize();
 
 // 7. 대학생 새내기들의 90%는 자신이 반에서 평균은 넘는다고 생각한다.
 

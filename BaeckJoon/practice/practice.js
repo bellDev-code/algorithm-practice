@@ -73,6 +73,18 @@ function threeSolution() {
 
 threeSolution();
 
-const avgArray = [40, 80, 60];
+const avgArray = ["3", "40 80 60"];
 
-function average() {}
+const diviNum = parseInt(avgArray[0]);
+
+const grades = avgArray[1].split(" ");
+
+const maxNum = Math.max.apply(null, grades);
+
+let sumNewGrades = 0;
+
+for (let i = 0; i < grades.length; i++) {
+  sumNewGrades += (grades[i] / maxNum) * 100;
+}
+
+console.log(sumNewGrades / diviNum);
