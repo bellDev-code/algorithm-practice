@@ -8,7 +8,7 @@ const maxArr = Math.max.apply(null, array);
 // 최소값을 구하는 js 함수
 const minArr = Math.min.apply(null, array);
 
-console.log(minArr, maxArr);
+// console.log(minArr, maxArr);
 
 function solution() {
   let temp = array[0];
@@ -18,7 +18,7 @@ function solution() {
       temp = array[i];
     }
   }
-  console.log(temp);
+  // console.log(temp);
 }
 
 solution();
@@ -35,7 +35,7 @@ function newSolution() {
       length = i + 1;
     }
   }
-  console.log(temp, length);
+  // console.log(temp, length);
 }
 
 newSolution();
@@ -68,7 +68,7 @@ function threeSolution() {
     const temp = division[i] % 42;
     newSet.add(temp);
   }
-  console.log(Array.from(newSet).length);
+  // console.log(Array.from(newSet).length);
 }
 
 threeSolution();
@@ -87,4 +87,50 @@ for (let i = 0; i < grades.length; i++) {
   sumNewGrades += (grades[i] / maxNum) * 100;
 }
 
-console.log(sumNewGrades / diviNum);
+// console.log(sumNewGrades / diviNum);
+
+const oxArr = [
+  "5",
+  "OOXXOXXOOO",
+  "OOXXOOXXOO",
+  "OXOXOXOXOXOXOX",
+  "OOOOOOOOOO",
+  "OOOOXOOOOXOOOOX",
+];
+
+function oxQuize() {
+  const quize = parseInt(oxArr[0]);
+  for (let i = 0; i < quize; i++) {
+    let count = 1;
+    let eachSum = 0;
+    for (let j = 0; j < oxArr[i].length; j++) {
+      if (oxArr[i][j] === "O") {
+        eachSum += count;
+        count++;
+      } else {
+        count = 1;
+      }
+    }
+    console.log(eachSum);
+  }
+}
+
+oxQuize();
+
+const avgScore = [100, 95, 90, 80, 70, 60, 50];
+
+function avgFunction(avgScore) {
+  let avg = 0;
+  for (const num of avgScore) {
+    avg += num;
+  }
+  avg /= avgScore.length;
+  let count = 0;
+  for (const num of avgScore) {
+    if (avg < num) {
+      count++;
+    }
+  }
+  return (count / avgScore.length) * 100;
+}
+console.log(avgFunction(avgScore));
