@@ -73,6 +73,7 @@ if (sentence[0] === " ") {
   console.log(word.length);
 }
 
+// 문자열 뒤집기 문제 => 모르겠음
 // const score = "734 893";
 // const newScore = score.split(" ").reduce((item, index) => index + item, " ");
 
@@ -83,3 +84,19 @@ if (sentence[0] === " ") {
 // const newData = Math.max.apply(null, newSentence);
 
 // console.log(newData);
+
+// 다이얼 문제 => 모르겠음
+// const dial = "UNUCIC";
+// const dialInput = dial.split("");
+// console.log(dialInput);
+
+// const dialMap = {};
+// let dialStack = "";
+// let dialCounter = 3;
+
+// for (let i = "A".charCodeAt(0); i <= "z".charCodeAt(0); i++) {
+//   dialStack += String.fromCharCode(i);
+//   console.log(dialStack);
+// }
+
+const croInput = "ljes=njak";
