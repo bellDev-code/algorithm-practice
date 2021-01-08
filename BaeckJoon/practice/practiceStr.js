@@ -99,4 +99,56 @@ if (sentence[0] === " ") {
 //   console.log(dialStack);
 // }
 
-const croInput = "ljes=njak";
+const createAlphabetArray = () => {
+  const result = [];
+  for (let i = 0; i < 26; i++) {
+    result.push(String.fromCharCode(i + 65));
+  }
+  return result;
+};
+
+const createDialObject = (aDivider) => {
+  let result = {};
+
+  const chars = createAlphabetArray();
+
+  let dialNum = 3;
+  let charIndex = 0;
+
+  aDivider.forEach((divide) => {
+    let count = 0;
+    while (count < divide) {
+      result = Object.assign(
+        {},
+        {
+          ...result,
+          [chars[charIndex]]: {
+            value: dialNum,
+          },
+        }
+      );
+      count++;
+      charIndex++;
+    }
+    dialNum++;
+  });
+
+  return result;
+};
+
+const caculatorDialTime = (input) => {
+  let result = 0;
+
+  input.split("").forEach((char) => {
+    const time = dialObject[char].value;
+    result += time;
+  });
+
+  return result;
+};
+
+const dividers = [3, 3, 3, 3, 3, 4, 3, 4];
+const dialObject = createDialObject(dividers);
+const totalCount = caculatorDialTime("UNUCIC");
+
+console.log(totalCount);
