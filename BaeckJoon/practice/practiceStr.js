@@ -67,11 +67,11 @@ const sentence = "The Curious Case of Benjamin Button";
 const word = sentence.trim().split(" ");
 // console.log(word);
 
-if (sentence[0] === " ") {
-  console.log(0);
-} else {
-  console.log(word.length);
-}
+// if (sentence[0] === " ") {
+//   console.log(0);
+// } else {
+//   console.log(word.length);
+// }
 
 // 문자열 뒤집기 문제 => 모르겠음
 // const score = "734 893";
