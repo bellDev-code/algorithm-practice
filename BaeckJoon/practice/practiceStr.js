@@ -99,59 +99,60 @@ const word = sentence.trim().split(" ");
 //   console.log(dialStack);
 // }
 
-// const createAlphabetArray = () => {
-//   const result = [];
-//   for (let i = 0; i < 26; i++) {
-//     result.push(String.fromCharCode(i + 65));
-//   }
-//   return result;
-// };
+const createAlphabetArray = () => {
+  const result = [];
+  for (let i = 0; i < 26; i++) {
+    result.push(String.fromCharCode(i + 65));
+  }
+  return result;
+};
 
-// const createDialObject = (aDivider) => {
-//   let result = {};
+const createDialObject = (aDivider) => {
+  let result = {};
 
-//   const chars = createAlphabetArray();
+  const chars = createAlphabetArray();
 
-//   let dialNum = 3;
-//   let charIndex = 0;
+  let dialNum = 3;
+  let charIndex = 0;
 
-//   aDivider.forEach((divide) => {
-//     let count = 0;
-//     while (count < divide) {
-//       result = Object.assign(
-//         {},
-//         {
-//           ...result,
-//           [chars[charIndex]]: {
-//             value: dialNum,
-//           },
-//         }
-//       );
-//       count++;
-//       charIndex++;
-//     }
-//     dialNum++;
-//   });
+  aDivider.forEach((divide) => {
+    let count = 0;
+    while (count < divide) {
+      const char = chars[charIndex];
+      result = Object.assign(
+        {},
+        {
+          ...result,
+          [char]: {
+            value: dialNum,
+          },
+        }
+      );
+      count++;
+      charIndex++;
+    }
+    dialNum++;
+  });
 
-//   return result;
-// };
+  return result;
+};
 
-// const caculatorDialTime = (input) => {
-//   let result = 0;
+const caculatorDialTime = (input, aDialObject) => {
+  let result = 0;
 
-//   input.split("").forEach((char) => {
-//     const time = dialObject[char].value;
-//     result += time;
-//   });
+  input.split("").forEach((char) => {
+    const time = aDialObject[char].value;
+    result += time;
+  });
 
-//   return result;
-// };
+  return result;
+};
 
-// const dividers = [3, 3, 3, 3, 3, 4, 3, 4];
-// const dialObject = createDialObject(dividers);
-// const totalCount = caculatorDialTime("UNUCIC");
+const dividers = [3, 3, 3, 3, 3, 4, 3, 4];
+const dialObject = createDialObject(dividers);
+const totalCount = caculatorDialTime("UNUCIC", dialObject);
 
-// console.log(totalCount);
+console.log(totalCount);
 
 // 크로아티아 알파벳 문제
 const croWord = "ljes=njak";
