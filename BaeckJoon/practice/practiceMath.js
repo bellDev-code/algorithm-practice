@@ -9,14 +9,24 @@ function breakEvenFuc(A, B, C) {
   //   console.log(margin, breakEvenPoint);
 
   // 손익분기점이 존재하지 않으면 -1을 출력해야한다.
-  // 그러므로 margin이 0이면 -1을 출력하고, 아니면 breakEvenPoint를 출력한다.
-  console.log(margin <= 0 ? -1 : breakEvenPoint);
+  // 그러므로 margin이 0이면 -1을 출력하고(0이면 손익분기점이 없으니깐), 아니면 breakEvenPoint를 출력한다.
+  //   console.log(margin <= 0 ? -1 : breakEvenPoint);
 }
 
 breakEvenFuc(1000, 70, 170);
 
 // 육각형 문제
-//
-function hexagon(N) {}
 
-hexagon();
+function hexagon(N) {
+  // 처음에 방이 1개, 두 번째 범위에서 방이 7개, 세 번째 범위에서 방이 19개, 네 번째 범위에서 37개
+  // 겉에 있는 방의 개수는 6개씩 늘어난다. (6, 12, 18 ...)
+  let counter = 1;
+  let range = 1;
+
+  while (range < N) {
+    range += counter++ * 6;
+  }
+  console.log(counter);
+}
+
+hexagon(58);
