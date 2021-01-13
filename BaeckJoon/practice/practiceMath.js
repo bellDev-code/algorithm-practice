@@ -57,3 +57,17 @@ function fractionalFunc(X) {
 }
 
 fractionalFunc(14);
+
+// 달팽이 문제
+
+function snail() {
+  // 높이가 5인 막대기에 하루에 2미터 올라가고, 1미터 미끌어진다.
+  // 높이는 V =
+  const input = [2, 1, 5];
+
+  const A = input.shift();
+  const B = input.shift();
+  const V = input.shift();
+}
+
+snail();
