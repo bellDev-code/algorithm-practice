@@ -11,6 +11,7 @@ function breakEvenFuc(A, B, C) {
   // 손익분기점이 존재하지 않으면 -1을 출력해야한다.
   // 그러므로 margin이 0이면 -1을 출력하고(0이면 손익분기점이 없으니깐), 아니면 breakEvenPoint를 출력한다.
   //   console.log(margin <= 0 ? -1 : breakEvenPoint);
+  return breakEvenPoint;
 }
 
 breakEvenFuc(1000, 70, 170);
@@ -24,7 +25,8 @@ function hexagon(N) {
   let range = 1;
 
   while (range < N) {
-    range += counter++ * 6;
+    range += counter * 6;
+    counter += 1;
   }
   // console.log(counter);
 }
@@ -43,7 +45,7 @@ function fractionalFunc(X) {
   // 그룹 개수가 증가할 때마다 입력 받은 X에서 그룹을 빼주면 해당 그룹에 도달했을 때, X는 0 또는 음수가 된다.
   while (X > 0) {
     counter++;
-    X = X - counter;
+    X -= counter;
   }
   // console.log(X, counter);
 
