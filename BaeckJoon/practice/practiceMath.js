@@ -75,34 +75,3 @@ function snail() {
 }
 
 snail();
-
-// 호텔 방
-
-function hotel() {
-  const input = ["2", "6, 12, 10", "30, 50, 72"];
-  const text = parseInt(input.shift());
-
-  for (let i = 0; i < text; i++) {
-    const HWN = input[i].split(" ");
-    // console.log(HWN);
-    let H = parseInt(HWN.shift());
-    // console.log(H);
-    HWN.shift();
-    let N = parseInt(HWN.shift());
-    // console.log(N);
-
-    let roomCount = 1;
-
-    while (N > H) {
-      roomCount++;
-      N = N - H;
-    }
-    if (roomCount < 10) {
-      console.log(`${N}0${roomCount}`);
-    } else {
-      console.log(`${N}${roomCount}`);
-    }
-  }
-}
-
-hotel();
