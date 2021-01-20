@@ -75,3 +75,17 @@ function snail() {
 }
 
 snail();
+
+// 설탕 문제
+// 설탕 공장에서 만드는 설탕은 3kg, 5kg로 나눠진다.
+// ex ) 설탕 18kg 나르기 위해서 3kg 6개도 가능하지만, 5kg 3개와 3kg 1개로 나눠서
+// 가져간다면 더 적은 봉지를 사용할 수 있다.
+
+const sugarDellivery = () => {
+  const Big = "5";
+  const Small = "3";
+
+  console.log(sugar);
+};
+
+sugarDellivery();
