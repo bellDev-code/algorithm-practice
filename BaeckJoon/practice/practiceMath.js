@@ -89,8 +89,21 @@ const sugarDellivery = (sugar) => {
 
   const sugarBigEnvelop = Math.floor(sugar % Big);
   const sugarSmallEnvelop = Math.floor(sugar % Small);
-
-  console.log(sugarBigEnvelop, sugarSmallEnvelop);
 };
 
 sugarDellivery(sugar);
+
+// 큰 수 더하기
+
+function BigNumPlus(A, B) {
+  const result = A + B;
+  console.log(result);
+}
+
+BigNumPlus(9223372036854775807, 9223372036854775808);
+
+// Fly me to the Alpha Centauri
+
+function Alpha() {}
+
+Alpha();
