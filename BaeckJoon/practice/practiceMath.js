@@ -81,17 +81,36 @@ snail();
 // ex ) 설탕 18kg 나르기 위해서 3kg 6개도 가능하지만, 5kg 3개와 3kg 1개로 나눠서
 // 가져간다면 더 적은 봉지를 사용할 수 있다.
 
-const sugar = "11";
+const SUGAR = 6;
 
-const sugarDellivery = (sugar) => {
-  const Big = "5";
-  const Small = "3";
+const BIG_QUANTITY = 5;
+const SMALL_QUANTITY = 3;
 
-  const sugarBigEnvelop = Math.floor(sugar % Big);
-  const sugarSmallEnvelop = Math.floor(sugar % Small);
+const sugarDellivery = (aSugar) => {
+  let bigCount = 0;
+  let smallCount = 0;
+
+  const bigRemain = aSugar % BIG_QUANTITY;
+
+  const smallCount = bigRemain / SMALL_QUANTITY;
+
+  if (bigRemain === 0) {
+    bigCount += aSugar / BIG_QUANTITY;
+  }
+
+  // 3의 배수면 3개 짜리로만
+  if (aSugar % SMALL_QUANTITY === 0) {
+    return aSugar / SMALL_QUANTITY;
+  }
+
+  if (bigRemain % SMALL_QUANTITY !== 0) {
+    return -1;
+  }
+
+  return bigCount + smallCount;
 };
 
-sugarDellivery(sugar);
+console.log(sugarDellivery(SUGAR));
 
 // 큰 수 더하기
 
