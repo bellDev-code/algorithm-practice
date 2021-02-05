@@ -26,11 +26,11 @@ for (let i = 0; i < num; i++) {
 }
 console.log(counter);
 
-minorityFunc();
+minority();
 
 const range = ["64", "65"];
 const primeNumArr = [];
-let primeNumSum = 0;
+let primeNum = 0;
 
 function rangeMinority(n) {
   if (n < 2) {
@@ -43,3 +43,5 @@ function rangeMinority(n) {
     }
   }
 }
+
+rangeMinority();
